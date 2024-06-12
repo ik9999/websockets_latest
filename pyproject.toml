@@ -53,7 +53,7 @@ omit = [
 
 [tool.coverage.paths]
 source = [
-    "src/websockets_latest",
+    "src_latest/websockets_latest",
    ".tox/*/lib/python*/site-packages/websockets_latest",
 ]
 

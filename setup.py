@@ -7,7 +7,7 @@ import setuptools
 
 root_dir = pathlib.Path(__file__).parent
 
-exec((root_dir / "src" / "websockets_latest" / "version.py").read_text(encoding="utf-8"))
+exec((root_dir / "src_latest" / "websockets_latest" / "version.py").read_text(encoding="utf-8"))
 
 # PyPI disables the "raw" directive. Remove this section of the README.
 long_description = re.sub(
@@ -25,7 +25,7 @@ else:
     ext_modules = [
         setuptools.Extension(
             "websockets_latest.speedups",
-            sources=["src/websockets_latest/speedups.c"],
+            sources=["src_latest/websockets_latest/speedups.c"],
             optional=os.environ.get("BUILD_EXTENSION") != "yes",
         )
     ]
