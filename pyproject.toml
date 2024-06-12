@@ -45,16 +45,16 @@ archs = ["auto", "aarch64"]
 branch = true
 omit = [
     # */websockets matches src/websockets and .tox/**/site-packages/websockets
-    "*/websockets/__main__.py",
-    "*/websockets/legacy/async_timeout.py",
-    "*/websockets/legacy/compatibility.py",
+    "*/websockets_latest/__main__.py",
+    "*/websockets_latest/legacy/async_timeout.py",
+    "*/websockets_latest/legacy/compatibility.py",
     "tests/maxi_cov.py",
 ]
 
 [tool.coverage.paths]
 source = [
-    "src/websockets",
-   ".tox/*/lib/python*/site-packages/websockets",
+    "src/websockets_latest",
+   ".tox/*/lib/python*/site-packages/websockets_latest",
 ]
 
 [tool.coverage.report]
