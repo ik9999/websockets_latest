@@ -1,2 +1,2 @@
 include LICENSE
-include src/websockets/py.typed
+include src/websockets_latest/py.typed
