@@ -62,7 +62,7 @@ if not released:  # pragma: no cover
 
         # Read version from package metadata if it is installed.
         try:
-            return importlib.metadata.version("websockets")
+            return importlib.metadata.version("websockets_latest")
         except ImportError:
             pass
 
