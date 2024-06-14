@@ -32,7 +32,8 @@ else:
 
 # Static values are declared in pyproject.toml.
 setuptools.setup(
-    package_dir = {"": "src_latest"},
+    name="websockets_latest",
+    package_dir={"": "src_latest"},
     version=version,
     long_description=long_description,
     ext_modules=ext_modules,
